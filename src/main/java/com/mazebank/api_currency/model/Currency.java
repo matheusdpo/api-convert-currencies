@@ -1,10 +1,15 @@
 package com.mazebank.api_currency.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Currency {
-    private Double iva;
-    private Double fee;
-    private Double amount;
-    private Double total;
+    protected Double iva;
+    protected Double fee;
+    protected Double amount;
+    protected Double total;
 
     public Double setTotal(Double amount) {
         this.total = amount + fee + iva;
